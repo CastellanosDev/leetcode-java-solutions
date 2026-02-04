@@ -1,5 +1,35 @@
 package medium.longest_Palindromic_Substring;
 
+/**
+ * LeetCode #5 - Longest Palindromic Substring
+ * Difficulty: Medium
+ * <p>
+ * Problem:
+ * Given a string s, return the longest palindromic substring in s.
+ * <p>
+ * Examples:
+ * Input: s = "babad"
+ * Output: "bab" (Note: "aba" is also a valid answer)
+ * <p>
+ * Input: s = "cbbd"
+ * Output: "bb"
+ * <p>
+ * Constraints:
+ * - 1 <= s.length <= 1000
+ * - s consists of only digits and English letters
+ * <p>
+ * Approach:
+ * - Expand around center technique
+ * - For each position, expand outward while characters match
+ * - Check both odd-length (single center) and even-length (dual center) palindromes
+ * <p>
+ * Time Complexity: O(n²) where n is the length of the string
+ * Space Complexity: O(1) - only using index variables
+ *
+ * @author CastellanosDev
+ * @see <a href="https://leetcode.com/problems/longest-palindromic-substring/">LeetCode Problem</a>
+ */
+
 class Solution {
 
     public String longestPalindrome(String s) {
